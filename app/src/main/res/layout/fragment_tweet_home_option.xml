@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/comment_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.14"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/thumbs_up_down"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/comment_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/thumbs_up_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/up" />
+
+        <ImageView
+            android:id="@+id/thumbs_down_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/down" />
+    </LinearLayout>
+
+</RelativeLayout>
